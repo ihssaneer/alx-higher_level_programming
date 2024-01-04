@@ -17,5 +17,3 @@ if __name__ == "__main__":
         elif argv[3] == '/':
             print("{}".format(add(a,b)))
         else:
-            
-    
