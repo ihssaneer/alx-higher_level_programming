@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-i = 0
-for i in range(9):
-	for j in range(i + 1, 10):
-		if i == 8:
-			print("{}{}".format(i, j))
-			break
-		print("{}{}, ".format(i, j), end="")
+for num in range(1, 100):
+    separated = ", "
+    if num == 89:
+        separated = "\n"
+    if num / 10 < num % 10:
+        print("{:02d}".format(num), end=separated)

@@ -1,9 +1,3 @@
 #!/usr/bin/python3
-b = False
-for i in range(122, 96, -1):
-	if b == True:
-		print("{}".format(chr(i - 32)), end="")
-		b = False
-	else:
-		print("{}".format(chr(i)), end="")
-		b = True
+for ch in range(122, 97, -2):
+    print("{}".format(chr(ch) + chr(ch - 33)), end="")
